@@ -4,6 +4,19 @@ const searchBox = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 const weatherIcon = document.querySelector(".weather-icon")
 
+function handleKeyPress(event) {
+    // Check if Enter (key code 13) is pressed
+    if (event.keyCode === 13) {
+        document.getElementById(".search Button").click();
+    }
+}
+
+function search() {
+    const query = document.getElementById(".search input").value;
+    alert("You searched for: " + query);
+    // You can replace the alert with actual search functionality
+}
+
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
 
@@ -23,9 +36,14 @@ async function checkWeather(city) {
         document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + " Kmph"
         document.querySelector(".pressure").innerHTML = Math.round(data.main.pressure) + " hPa"
 
+        const mainWeather = data.weather[0].main
+        document.querySelector(".primary-condition").innerHTML = `${mainWeather}`
+        const descriptionWeather = data.weather[0].description
+        document.querySelector(".secondary-condition").innerHTML = `${descriptionWeather}`
+
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "images/clouds.png"
+            weatherIcon.src = "images/clouds.png";
         }
         else if (data.weather[0].main == "Clear") {
             weatherIcon.src = "images/clear.png";

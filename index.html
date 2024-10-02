@@ -28,7 +28,7 @@
         <div class="card">
             <div class="search">
                 <input type="text" placeholder="Enter city name" spellcheck="false">
-                <button>
+                <button class="search-button">
                     <img src="images/search.png" alt="">
                 </button>
             </div>
@@ -41,6 +41,14 @@
                 <img src="images/rain.png" alt="" class="weather-icon">
                 <h1 class="temp">22°C</h1>
                 <h2 class="city">Jeypore</h2>
+                <div class="condition">
+                    <div class="primary-condition">
+                        <div>Clear</div>
+                    </div>
+                    <div class="secondary-condition">
+                        <div>Moderate rain</div>
+                    </div>
+                </div>
                 <div class="details">
                     <div class="col">
                         <img src="images/humidity.png">
@@ -116,7 +124,7 @@
                 <h3>Contact Us</h3>
                 <form action="submit">
                     <input type="email" placeholder="Your email address" required>
-                    <textarea placeholder="Your message" rows="4" required></textarea>
+                    <textarea placeholder="Your message" rows="3" required></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
