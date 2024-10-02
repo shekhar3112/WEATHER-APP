@@ -55,12 +55,16 @@ body {
     color: #00bfff;
   }
 
+main{
+    min-height: 900px;
+}
+
 .card {
     width: 90%;
     max-width: 500px;
     background: linear-gradient(135deg, #60efff, #0061ff);
     color: #fff;
-    margin: 50px auto 15px;
+    margin: 50px auto 20px;
     border-radius: 10px;
     padding: 40px 35px;
     text-align: center;
@@ -195,3 +199,111 @@ body {
     font-size: 14px;
     display: none;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex-basis: 30%;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section p, .footer-section ul, .footer-section form {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff9c00;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #ff9c00;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #e88a00;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  
+  .socials a {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  .socials a:hover {
+    color: #ff9c00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  

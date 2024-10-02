@@ -24,72 +24,113 @@
             </ul>
         </div>
     </nav>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button>
-                <img src="images/search.png" alt="">
-            </button>
-        </div>
-        <div class="error">
-            <p>
-                <i>Invalid City Name</i>
-            </p>
-        </div>
-        <div class="weather">
-            <img src="images/rain.png" alt="" class="weather-icon">
-            <h1 class="temp">22°C</h1>
-            <h2 class="city">Jeypore</h2>
-            <div class="details">
-                <div class="col">
-                    <img src="images/humidity.png">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
+    <main>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter city name" spellcheck="false">
+                <button>
+                    <img src="images/search.png" alt="">
+                </button>
+            </div>
+            <div class="error">
+                <p>
+                    <i>Invalid City Name</i>
+                </p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" alt="" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">Jeypore</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">50 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="images/wind.png">
-                    <div>
-                        <p class="wind">50 km/h</p>
-                        <p>Wind Speed</p>
+                <div class="details-second">
+                    <div class="col-second">
+                        <img src="images/max_temp.png">
+                        <div>
+                            <p class="max_temp">40°C</p>
+                            <p>Max Temp</p>
+                        </div>
+                    </div>
+                    <div class="col-second">
+                        <img src="images/min_temp.png">
+                        <div>
+                            <p class="min_temp">20°C</p>
+                            <p>Min Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-third">
+                    <div class="col-third">
+                        <img src="images/feels_like.png">
+                        <div>
+                            <p class="feels_like">27°C</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col-third">
+                        <img src="images/pressure.png">
+                        <div>
+                            <p class="pressure">1000 hPa</p>
+                            <p>Pressure</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="details-second">
-                <div class="col-second">
-                    <img src="images/max_temp.png">
-                    <div>
-                        <p class="max_temp">40°C</p>
-                        <p>Max Temp</p>
-                    </div>
-                </div>
-                <div class="col-second">
-                    <img src="images/min_temp.png">
-                    <div>
-                        <p class="min_temp">20°C</p>
-                        <p>Min Temp</p>
-                    </div>
-                </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>
+                    Our platform provides real-time weather updates, detailed forecasts, and climate
+                    insights to help you make informed decisions. We’re committed to making weather forecasts accessible and easy to understand for everyone.
+                    <br>
+                    Stay ahead of the skies with CloudyClear – where clarity meets the clouds!
+                </p>
             </div>
-            <div class="details-third">
-                <div class="col-third">
-                    <img src="images/feels_like.png">
-                    <div>
-                        <p class="feels_like">27°C</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <div class="col-third">
-                    <img src="images/pressure.png">
-                    <div>
-                        <p class="pressure">1000 hPa</p>
-                        <p>Pressure</p>
-                    </div>
-                </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-form">
+                <h3>Contact Us</h3>
+                <form action="submit">
+                    <input type="email" placeholder="Your email address" required>
+                    <textarea placeholder="Your message" rows="4" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CloudyClear | All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 
