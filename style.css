@@ -61,7 +61,7 @@ body {
     background: linear-gradient(135deg, #60efff, #0061ff);
     color: #fff;
     margin: 50px auto 15px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 40px 35px;
     text-align: center;
     box-shadow:
@@ -88,7 +88,7 @@ body {
     color: #555;
     padding: 10px 25px;
     height: 60px;
-    border-radius: 30px;
+    border-radius: 18px;
     flex: 1;
     margin-right: 16px;
     font-size: 18px;
@@ -99,7 +99,7 @@ body {
     border: 0;
     outline: 0;
     background: #ebfffc;
-    border-radius: 50%;
+    border-radius: 40%;
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -129,7 +129,7 @@ body {
 .details {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
     margin-top: 50px;
 }
@@ -139,14 +139,48 @@ body {
     align-items: center;
     text-align: left;
 }
+.details-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col-second {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.details-third {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col-third {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
 
 .col img {
     width: 40px;
     margin-right: 10px;
 }
+.col-second img {
+    width: 40px;
+    margin-right: 10px;
+}
+.col-third img {
+    width: 40px;
+    margin-right: 10px;
+}
 
 .humidity,
-.wind {
+.wind, .max_temp, .min_temp, .feels_like, .pressure{
     font-size: 28px;
     margin-top: -6px;
 }
