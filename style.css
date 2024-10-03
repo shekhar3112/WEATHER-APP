@@ -213,7 +213,7 @@ main{
 
 /* Footer Styles */
 footer {
-    background-color: #333;
+    background-color: #192733;
     color: #fff;
     padding: 40px 0;
     font-family: Arial, sans-serif;
@@ -296,18 +296,7 @@ footer {
     margin: 0;
     font-size: 0.9em;
   }
-  
-  .socials a {
-    color: #fff;
-    font-size: 1.2em;
-    margin: 0 10px;
-    transition: color 0.3s;
-  }
-  
-  .socials a:hover {
-    color: #ff9c00;
-  }
-  
+    
   /* Responsive Design */
   @media (max-width: 768px) {
     .footer-content {

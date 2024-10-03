@@ -4,19 +4,6 @@ const searchBox = document.querySelector(".search input")
 const searchBtn = document.querySelector(".search button")
 const weatherIcon = document.querySelector(".weather-icon")
 
-function handleKeyPress(event) {
-    // Check if Enter (key code 13) is pressed
-    if (event.keyCode === 13) {
-        document.getElementById(".search Button").click();
-    }
-}
-
-function search() {
-    const query = document.getElementById(".search input").value;
-    alert("You searched for: " + query);
-    // You can replace the alert with actual search functionality
-}
-
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`)
 
@@ -29,8 +16,8 @@ async function checkWeather(city) {
 
         document.querySelector(".city").innerHTML = data.name
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C"
-        document.querySelector(".max_temp").innerHTML = data.main.temp_max + "°C"
-        document.querySelector(".min_temp").innerHTML = data.main.temp_min + "°C"
+        document.querySelector(".max_temp").innerHTML = Math.round(data.main.temp_max) + "°C"
+        document.querySelector(".min_temp").innerHTML = Math.round(data.main.temp_min) + "°C"
         document.querySelector(".feels_like").innerHTML = Math.round(data.main.feels_like) + "°C"
         document.querySelector(".humidity").innerHTML = data.main.humidity + "%"
         document.querySelector(".wind").innerHTML = Math.round(data.wind.speed) + " Kmph"
